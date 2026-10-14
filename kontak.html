@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://alyusdah.sch.id/">
+  <link rel="icon" href="gambar/logo-alyusdah.png">
+
+  <!-- Meta Open Graph (Agar tampilan bagus saat link dibagikan di WA/FB/Sosmed) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alyusdah.sch.id/">
+  <meta property="og:title" content="alyusdah">
+  <meta property="og:description" content="Website Resmi Sekolah SD & SMP Terpadu Al-Yusdah - Membentuk Generasi Berkarakter, Cerdas, dan Berwawasan Global.">
+  <meta property="og:image" content="https://alyusdah.sch.id/gambar/secion-hero.jpeg">
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Al-Yusdah — SD & SMP Terpadu</title>
+  <meta name="description" content="Website Resmi Sekolah SD & SMP Terpadu Al-Yusdah - Membentuk Generasi Berkarakter, Cerdas, dan Berwawasan Global.">
+  <meta name="theme-color" content="#007F3C">
+  <link rel="icon" href="gambar/favicon.png">
+
+  <!-- Sambungkan lebih awal ke server font & Bootstrap -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Foto hero dimuat paling awal -->
+  <link rel="preload" as="image" type="image/webp" fetchpriority="high"
+        imagesrcset="gambar/hero-800.webp 800w, gambar/hero-1280.wep 1280w, gambar/hero-1920.webp 1920w" imagesizes="100vw">
+
+  <!-- Font -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"></noscript>
+
+  <!-- FontAwesome untuk Ikon Unit Pendidikan -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Style kustom -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/kontak.css">
+
+</head>
+
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="site-header-static border-bottom shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+          <img src="gambar/logo-alyusdah.png" alt="Logo Al-Yusdah" width="53" height="48">
+          <span class="lh-sm span-custom">Al-Yusdah<small class="d-block fw-medium brand-sub">SD &amp; SMP Terpadu</small></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Buka menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 pt-3 pt-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+            
+            <!-- Dropdown Menu Profile -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Profile
+              </a>
+              <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="profileDropdown">
+                <li><a class="dropdown-item" href="sambutan.html">Sambutan</a></li>
+                <li><a class="dropdown-item" href="profil.html">Profil Sekolah</a></li>
+                <li><a class="dropdown-item" href="guru.html">Guru &amp; Staf</a></li>
+                <li><a class="dropdown-item" href="index.html#eskul">Ekstrakurikuler</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+            <li class="nav-item"><a class="nav-link" href="galery.html">Galery</a></li>
+            <li class="nav-item"><a class="nav-link active" href="kontak.html">Kontak</a></li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0 pb-3 pb-lg-0"><a class="btn btn-warning w-100" href="index.html#daftar">Pendaftaran</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ KONTEN UTAMA KONTAK ============ -->
+  <main class="py-5 bg-light">
+    <div class="container">
+      
+      <!-- Judul Halaman -->
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-success">HUBUNGI KAMI</h2>
+        <p class="text-secondary">Silakan hubungi atau kunjungi kami untuk informasi seputar pendaftaran dan kegiatan sekolah.</p>
+      </div>
+
+      <div class="row g-4 mb-5">
+        
+        <!-- Informasi Kontak (Kolom Kiri) -->
+        <div class="col-lg-5">
+          <div class="row g-3">
+            
+            <!-- Kartu Alamat / Lokasi -->
+            <div class="col-12">
+              <div class="card contact-card shadow-sm p-4 bg-white h-100">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="icon-box-contact flex-shrink-0">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <h3 class="h6 fw-bold text-dark mb-1">Lokasi Sekolah</h3>
+                    <p class="text-secondary small mb-0">SD &amp; SMP Terpadu Al-Yusdah<br>Jl. Pendidikan No. 12, Medan, Sumatera Utara</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kartu Kontak & Email -->
+            <div class="col-12">
+              <div class="card contact-card shadow-sm p-4 bg-white h-100">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="icon-box-contact flex-shrink-0">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h3 class="h6 fw-bold text-dark mb-1">Kontak &amp; Email</h3>
+                    <p class="text-secondary small mb-1"><strong>Email:</strong> yayasan.alyusdah99@gmail.com</p>
+                    <p class="text-secondary small mb-0"><strong>Telepon:</strong> (061) 0000-000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kartu Jam Operasional -->
+            <div class="col-12">
+              <div class="card contact-card shadow-sm p-4 bg-white h-100">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="icon-box-contact flex-shrink-0">
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+                  <div>
+                    <h3 class="h6 fw-bold text-dark mb-1">Jam Operasional</h3>
+                    <p class="text-secondary small mb-0">Senin – Jumat (07.30 – 14.30 WIB)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Formulir Pesan (Kolom Kanan) -->
+        <div class="col-lg-7">
+          <div class="card contact-card shadow-sm p-4 p-md-5 bg-white h-100">
+            <h3 class="h5 fw-bold text-dark mb-3">Kirim Pesan atau Pertanyaan</h3>
+            <p class="text-secondary small mb-4">Punya pertanyaan seputar PPDB atau program sekolah? Kirimkan pesan melalui formulir di bawah ini.</p>
+            
+            <form>
+              <div class="mb-3">
+                <label for="nama" class="form-label small fw-semibold text-dark">Nama Lengkap</label>
+                <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda" required>
+              </div>
+              <div class="mb-3">
+                <label for="kontak_pengirim" class="form-label small fw-semibold text-dark">Nomor WhatsApp / Email</label>
+                <input type="text" class="form-control" id="kontak_pengirim" placeholder="Contoh: 08123456789" required>
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label small fw-semibold text-dark">Pesan / Pertanyaan</label>
+                <textarea class="form-control" id="pesan" rows="4" placeholder="Tuliskan pertanyaan Anda di sini..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-success w-100 py-2 fw-semibold">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ============ PETA LOKASI (EMBEDDED GOOGLE MAPS) ============ -->
+      <section class="card border-0 shadow-sm rounded-4 p-4 p-md-4 bg-white">
+        <h3 class="h5 fw-bold text-dark mb-3 text-center">Peta Lokasi SD &amp; SMP Terpadu Al-Yusdah</h3>
+        <p class="text-secondary text-center small mb-4">Kunjungi lokasi sekolah kami secara langsung atau temukan rute terbaik melalui peta di bawah ini.</p>
+        
+        <div class="ratio ratio-21x9 rounded-3 overflow-hidden shadow-sm">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.9!2d98.8161!3d3.6134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMzYnNDguMCJOIDk4wrA0OCc1OC4wIkU!5e0!3m2!1sid!2sid!4v1600000000000!5m2!1sid!2sid" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Lokasi SD & SMP Terpadu Al-Yusdah">
+          </iframe>
+        </div>
+
+        <div class="text-center mt-3">
+          <a class="btn btn-outline-success btn-sm" href="https://www.google.com/maps?q=3.6134,98.8161" target="_blank" rel="noopener">
+            <i class="fa-solid fa-map-location-dot me-1"></i> Buka Peta Lebih Besar di Google Maps
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="kontak" class="bg-brand-dark text-white pt-5 pb-3 cv-auto">
+    <div class="container">
+      <div class="row g-4 mb-4">
+
+        <div class="col-12 col-lg-5">
+          <h3 class="h6 text-warning mb-3">Lokasi Sekolah</h3>
+          <div class="bg-soft text-body rounded-3 p-2">
+            
+            <!-- Peta Langsung Nampak (Embedded Google Maps) -->
+            <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.9!2d98.8161!3d3.6134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMzYnNDguMCJOIDk4wrA0OCc1OC4wIkU!5e0!3m2!1sid!2sid!4v1600000000000!5m2!1sid!2sid" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Lokasi SD & SMP Terpadu Al-Yusdah">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3 ms-3">
+          <h3 class="h6 text-warning mb-3">Menu</h3>
+            <p class="mb-1"><a href="#beranda" class="text-white text-decoration-none opacity-75">Beranda</a></p>
+            <p class="mb-1"><a href="#profil-sekolah" class="text-white text-decoration-none opacity-75">Profil Sekolah</a></p>
+            <p class="mb-1"><a href="#berita" class="text-white text-decoration-none opacity-75">Berita</a></p>
+            <p class="mb-1"><a href="#galery" class="text-white text-decoration-none opacity-75">Galery</a></p>
+            <p class="mb-1"><a href="#kontak" class="text-white text-decoration-none opacity-75">Kontak</a></p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <h3 class="h6 text-warning mb-3">Kontak &amp; Operasional</h3>
+          <p class="small mb-2"><strong>Email:</strong> yayasan.alyusdah99@gmail.com</p>
+          <p class="small mb-2"><strong>Telepon:</strong> (061) 0000-000</p>
+          <p class="small mb-4"><strong>Jam Kerja:</strong> Senin – Jumat (07.30 – 14.30 WIB)</p>
+          <h3 class="h6 text-warning mb-3">Media Sosial</h3>
+          <div class="d-flex gap-2">
+            <a class="btn btn-outline-light btn-sm" href="#">Instagram</a>
+            <a class="btn btn-outline-light btn-sm" href="#">YouTube</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="border-top border-light border-opacity-25 pt-3 text-center small opacity-75">
+        © <span id="year">2026</span> Sekolah Terpadu Al-Yusdah. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
