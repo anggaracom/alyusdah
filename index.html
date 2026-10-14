@@ -33,11 +33,15 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"></noscript>
 
+  <!-- FontAwesome untuk Ikon Unit Pendidikan -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
   <!-- Style kustom -->
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navMenu" data-bs-root-margin="-30% 0px -150% 0px" data-bs-smooth-scroll="true" tabindex="0">
@@ -71,7 +75,7 @@
                 <li><a class="dropdown-item" href="sambutan.html">Sambutan</a></li>
                 <li><a class="dropdown-item" href="profil.html">Profil Sekolah</a></li>
                 <li><a class="dropdown-item" href="guru.html">Guru &amp; Staf</a></li>
-                <li><a class="dropdown-item" href="#eskul">Ekstrakurikuler</a></li>
+                <li><a class="dropdown-item" href="pengembangan.html">Ekstrakurikuler</a></li>
               </ul>
             </li>
 
@@ -116,27 +120,53 @@
       </div>
     </section>
 
-    <!-- ============ EKSTRAKURIKULER (PITA MARQUEE) ============ -->
-    <div class="marquee" id="eskul" aria-label="Ekstrakurikuler">
-      <div class="marquee-track" id="marqueeTrack">
-        <span>🎨 Seni Rupa</span>
-        <span>⚽ Futsal</span>
-        <span>🏊 Renang</span>
-        <span>🤖 Robotika</span>
-        <span>🎤 Paduan Suara</span>
-        <span>🏕️ Pramuka</span>
-        <span>🗣️ Debat</span>
-        <span>📰 Jurnalistik</span>
-        <span>🥋 Taekwondo</span>
-        <span>🎹 Musik</span>
-      </div>
-    </div>
+    <!-- ============ UNIT PENDIDIKAN (SD & SMP) ============ -->
+    <section class="py-4 mb-5 cv-auto" id="unit-pendidikan" style="background-color: #F9F9F4;">
+      <div class="container">
+        <div class="text-center mb-4 unit-pendidikan">
+          <h3 class="fw-bold text-dark mb-2">UNIT PENDIDIKAN</h3>
+          <p class="text-muted">Pilihan jenjang pendidikan berkualitas di Yayasan Al Yusdah</p>
+        </div>
 
+        <div class="row justify-content-center g-4">
+          <!-- Kartu SD -->
+          <div class="col-md-5 col-lg-5">
+            <div class="card unit-card card-sd p-4 text-center shadow-sm h-100">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <div class="icon-circle mb-3 shadow-sm">
+                  <i class="fa-solid fa-book-open-reader"></i>
+                </div>
+                <h3 class="fw-bold mb-2">SD</h3>
+                <p class="card-text mb-0 px-2" style="font-size: 0.95rem; opacity: 0.9;">
+                  Pendidikan Islami untuk SD, membentuk karakter anak yang cerdas dan berakhlak mulia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kartu SMP -->
+          <div class="col-md-5 col-lg-5">
+            <div class="card unit-card card-smp p-4 text-center shadow-sm h-100">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <div class="icon-circle mb-3 shadow-sm">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h3 class="fw-bold mb-2">SMP</h3>
+                <p class="card-text mb-0 px-2" style="font-size: 0.95rem; opacity: 0.9;">
+                  Pendidikan Islami tingkat lanjut untuk SMP, siap menghadapi era modern berlandaskan iman.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ============ BERITA ============ -->
     <section class="py-5 cv-auto" id="berita">
       <div class="container">
-        <h2 class="sec-title mb-4">Berita &amp; Kegiatan</h2>
+        <h6 class="text-custom">INFORMASI TERKINI</h6>
+        <h2 class="fw-bold text-dark mb-5">Berita &amp; Kegiatan</h2>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           
@@ -230,52 +260,9 @@
             </div>
           </div>
 
-
         </div>
       </div>
     </section>
-
-
-    <!-- ============ FASILITAS ============ -->
-    <!-- <section class="py-5 bg-soft cv-auto" id="fasilitas">
-      <div class="container">
-        <h2 class="sec-title">Fasilitas Modern</h2>
-        <p class="text-secondary mb-4">Sarana lengkap untuk menunjang kegiatan belajar mengajar yang efektif.</p>
-
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
-          <div class="col"><div class="card card-lift h-100"><div class="card-body">
-            <div class="icon-box mb-3">💻</div>
-            <h3 class="h6 fw-semibold">Laboratorium Komputer</h3>
-            <p class="text-secondary small mb-0">Komputer modern dengan akses internet berkecepatan tinggi untuk pembelajaran IT.</p>
-          </div></div></div>
-          <div class="col"><div class="card card-lift h-100"><div class="card-body">
-            <div class="icon-box mb-3">📚</div>
-            <h3 class="h6 fw-semibold">Perpustakaan Lengkap</h3>
-            <p class="text-secondary small mb-0">Koleksi buku pembelajaran, literatur Islami, dan ruang baca yang nyaman.</p>
-          </div></div></div>
-          <div class="col"><div class="card card-lift h-100"><div class="card-body">
-            <div class="icon-box mb-3">⚽</div>
-            <h3 class="h6 fw-semibold">Lapangan Olahraga</h3>
-            <p class="text-secondary small mb-0">Area olahraga serbaguna untuk Futsal, Basket, Voli, dan Upacara Bendera.</p>
-          </div></div></div>
-          <div class="col"><div class="card card-lift h-100"><div class="card-body">
-            <div class="icon-box mb-3">❄️</div>
-            <h3 class="h6 fw-semibold">Ruang Kelas Ber-AC</h3>
-            <p class="text-secondary small mb-0">Ruang belajar bersih, sejuk, dilengkapi proyektor multimedia.</p>
-          </div></div></div>
-          <div class="col"><div class="card card-lift h-100"><div class="card-body">
-            <div class="icon-box mb-3">🔬</div>
-            <h3 class="h6 fw-semibold">Laboratorium Sains</h3>
-            <p class="text-secondary small mb-0">Peralatan praktikum IPA lengkap untuk eksplorasi eksperimen langsung.</p>
-          </div></div></div>
-          <div class="col"><div class="card card-lift h-100"><div class="card-body">
-            <div class="icon-box mb-3">🚌</div>
-            <h3 class="h6 fw-semibold">Antar-Jemput</h3>
-            <p class="text-secondary small mb-0">Armada bus sekolah aman dengan pendamping staf terpercaya.</p>
-          </div></div></div>
-        </div>
-      </div>
-    </section> -->
 
     <!-- ============ PRESTASI & GURU / STAF ============ -->
     <section class="py-5 stats-section text-white cv-auto" id="guru">
@@ -291,27 +278,15 @@
           <div class="col"><div class="stat-num">B</div><p class="opacity-75 small mb-0">Akreditasi BAN-S/M</p></div>
           <div class="col"><div class="stat-num" data-target="210">210+</div><p class="opacity-75 small mb-0">Penghargaan</p></div>
         </div>
-
-        <!-- <div class="row row-cols-1 row-cols-md-3 g-3 mt-3">
-          <div class="col"><div class="bg-white text-secondary border-start border-5 border-warning rounded-3 p-3 h-100">
-            <b class="d-block text-body">Juara 1 OSN Matematika</b>Tingkat Kota Medan, Kategori SMP
-          </div></div>
-          <div class="col"><div class="bg-white text-secondary border-start border-5 border-warning rounded-3 p-3 h-100">
-            <b class="d-block text-body">Sekolah Adiwiyata</b>Penghargaan Lingkungan Hidup Tingkat Provinsi
-          </div></div>
-          <div class="col"><div class="bg-white text-secondary border-start border-5 border-warning rounded-3 p-3 h-100">
-            <b class="d-block text-body">Juara 2 Cerdas Cermat</b>Kompetisi Literasi SD Tingkat Kota
-          </div></div>
-        </div> -->
       </div>
     </section>
-    
     
     <!-- ============ PROGRAM ============ -->
     <section class="py-5 cv-auto" id="program">
       <div class="container">
-        <h2 class="sec-title">Program Studi</h2>
-        <p class="text-secondary">Pilih jenjang pendidikan untuk mempelajari kurikulum dan keunggulannya.</p>
+        
+        <h6 class="text-custom">PROGRAM</h6>
+        <h2 class="fw-bold text-dark">Program Studi</h2>
 
         <ul class="nav nav-pills my-3" role="tablist">
           <li class="nav-item flex-fill" role="presentation"><button class="nav-link active w-100" id="tab-btn-sd" data-bs-toggle="pill" data-bs-target="#tab-sd" type="button" role="tab" aria-controls="tab-sd" aria-selected="true">Tingkat SD (Kelas 1–6)</button></li>
@@ -366,8 +341,6 @@
       </div>
     </section>
 
-    
-
     <!-- ============ PENDAFTARAN ============ -->
     <section class="py-5 bg-soft text-center cv-auto" id="daftar">
       <div class="container">
@@ -386,9 +359,19 @@
 
         <div class="col-12 col-lg-5">
           <h3 class="h6 text-warning mb-3">Lokasi Sekolah</h3>
-          <div class="bg-soft text-body rounded-3 p-3 text-center">
-            <p class="mb-3"><strong>SD &amp; SMP Terpadu Al-Yusdah</strong><br>Jl. Pendidikan No. 12, Medan, Sumatera Utara</p>
-            <a class="btn btn-primary btn-sm" href="https://www.google.com/maps?q=3.6134,98.8161" target="_blank" rel="noopener">Buka di Google Maps</a>
+          <div class="bg-soft text-body rounded-3 p-2">
+            
+            <!-- Peta Langsung Nampak (Embedded Google Maps) -->
+            <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.9!2d98.8161!3d3.6134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMzYnNDguMCJOIDk4wrA0OCc1OC4wIkU!5e0!3m2!1sid!2sid!4v1600000000000!5m2!1sid!2sid" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Lokasi SD & SMP Terpadu Al-Yusdah">
+              </iframe>
+            </div>
           </div>
         </div>
 
@@ -396,14 +379,16 @@
           <h3 class="h6 text-warning mb-3">Menu</h3>
             <p class="mb-1"><a href="#beranda" class="text-white text-decoration-none opacity-75">Beranda</a></p>
             <p class="mb-1"><a href="#profil-sekolah" class="text-white text-decoration-none opacity-75">Profil Sekolah</a></p>
-            <p class="mb-1"><a href="#fasilitas" class="text-white text-decoration-none opacity-75">Fasilitas</a></p>
             <p class="mb-1"><a href="#berita" class="text-white text-decoration-none opacity-75">Berita</a></p>
+            <p class="mb-1"><a href="#galery" class="text-white text-decoration-none opacity-75">Galery</a></p>
+            <p class="mb-1"><a href="#kontak" class="text-white text-decoration-none opacity-75">Kontak</a></p>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-3">
           <h3 class="h6 text-warning mb-3">Kontak &amp; Operasional</h3>
-          <p class="small mb-2"><strong>Jam Kerja:</strong> Senin – Jumat (07.00 – 15.00 WIB)</p>
-          <p class="small mb-4"><strong>Telepon:</strong> (061) 0000-000</p>
+          <p class="small mb-2"><strong>Email:</strong> yayasan.alyusdah99@gmail.com</p>
+          <p class="small mb-2"><strong>Telepon:</strong> (061) 0000-000</p>
+          <p class="small mb-4"><strong>Jam Kerja:</strong> Senin – Jumat (07.30 – 14.30 WIB)</p>
           <h3 class="h6 text-warning mb-3">Media Sosial</h3>
           <div class="d-flex gap-2">
             <a class="btn btn-outline-light btn-sm" href="#">Instagram</a>
